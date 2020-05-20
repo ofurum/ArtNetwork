@@ -6,8 +6,10 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Vuelidate from 'vuelidate';
+import VueNavigationBar from "vue-navigation-bar";
 Vue.use(BootstrapVue)
 Vue.use(Vuelidate)
+Vue.component("vue-navigation-bar", VueNavigationBar);
 Vue.config.productionTip = false
 
 new Vue({

@@ -11,6 +11,7 @@
     "bootstrap-vue": "^2.12.0",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
+    "vue-navigation-bar": "^2.0.0",
     "vue-router": "^3.1.6",
     "vuelidate": "^0.7.5",
     "vuex": "^3.1.3"

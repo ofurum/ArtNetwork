@@ -10,7 +10,7 @@
             aria-label="Search"
           />
           <div class="search-2">
-            <div class="btn btn my-2 my-sm-0 bg-danger rounded " type="submit">
+            <div class="btn btn my-2 my-sm-0 user rounded " type="submit">
               Username
             </div>
             <div class="btn btn my-2 my-sm-0" type="submit">FORM OF ART</div>
@@ -41,7 +41,7 @@
           <b-dropdown
             id="dropdown-2"
             text="Filter"
-            variant="primary"
+            variant=""
             class="m-md-5"
           >
             <b-dropdown-item>First Action</b-dropdown-item>
@@ -53,65 +53,32 @@
           </b-dropdown>
         </div>
       </div>
-      <h2>PICKS OF THE DAY</h2>
+      <h2 class="picks mt-3">PICKS OF THE DAY</h2>
       <!-- cards-section -->
       <div class="cards mt-5">
-        <b-row>
-          <b-col>
-            <b-card
-              title="Card Title"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
-
-              <b-button href="#" variant="primary">Go somewhere</b-button>
-            </b-card>
-          </b-col>
-           <b-col>
-            <b-card
-              title="Card Title"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
-
-              <b-button href="#" variant="primary">Go somewhere</b-button>
-            </b-card>
-          </b-col>
-           <b-col>
-            <b-card
-              title="Card Title"
-              img-src="https://picsum.photos/600/300/?image=25"
-              img-alt="Image"
-              img-top
-              tag="article"
-              style="max-width: 20rem;"
-              class="mb-2"
-            >
-              <b-card-text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </b-card-text>
-
-              <b-button href="#" variant="primary">Go somewhere</b-button>
-            </b-card>
-          </b-col>
-        </b-row>
+       <div class="row ">
+          <div class="col picks-1 ">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body card-1">
+                  
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body card-1">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body card-1">
+                </div>
+              </div>
+            </div>
+       </div>
+       
       </div>
       <h2 class="mt-5">ALL UPDATES</h2>
       <div class="mt-5">
@@ -299,9 +266,12 @@
   margin-right: 25%;
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 300px;
+  position: relative;
+  bottom: 45px;
   box-shadow: 14px 14px 25px #0000000d;
+}
+.user{
+  background: #fd012a;
 }
 .search-1 {
   background: #1010100d;
@@ -315,6 +285,9 @@
   display: flex;
 }
 
+.picks-1{
+  border-bottom: olive;
+}
 .dropdown-2 {
   margin-left: auto;
 }
@@ -333,5 +306,17 @@
 .card-3{
     background: url("~@/assets/img/card-3.png");
     height: 50vh;
+}
+@media only screen and (max-width: 500px){
+  .search-box{
+    display: none;
+  }
+.picks{
+  font-size: 1.2em;
+ 
+}
+.picks-1{
+  margin: auto;
+}
 }
 </style>

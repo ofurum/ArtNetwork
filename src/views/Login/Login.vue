@@ -3,7 +3,7 @@
     <!-- that that the art  wallpaper -->
     <div class="first-part">
       <div class="row">
-        <div class="col-4 first-part-1">
+        <div class="col-4-sm first-part-1">
           <div class="part-1 p-5">
             <span class="svg">
               <svg
@@ -29,7 +29,7 @@
                 </g>
               </svg>
             </span>
-            <h2 class="text-light">
+            <h2 class="text-light title">
               <router-link
                 to="/"
                 style="text-decoration: none; color: inherit;"
@@ -38,13 +38,13 @@
             </h2>
           </div>
           <div class="sub-head">
-            <div class="item text-white"><strong>ART IS ALL THAT</strong></div>
-            <div class="item" id="matters"><strong>MATTERS</strong></div>
+            <div class="item text-white text-center"><strong>ART IS ALL THAT</strong></div>
+            <div class="item text-light" id="matters"><strong>MATTERS</strong></div>
           </div>
         </div>
 
         <!-- form reg part -->
-        <div class="col-8 p-5">
+        <div class="col-8-sm p-5">
           <h1 class="text-center mb-5">{{profile.name}}</h1>
           <div class="form-part">
           <form @submit.prevent="handleSubmit">
@@ -82,6 +82,7 @@
 .body {
   margin: 0px;
   padding: 0px;
+  font-family: 'poppins';
 }
 .first-part-1 {
   background: url("~@/assets/img/signup.png");
@@ -100,15 +101,29 @@
   align-self: center;
   position: absolute;
   top: 45%;
+  
 }
-#matters {
-  font-size: 30px;
+#matters{
+  font-size: 40px;
 }
+
 .form-g-1{
   background:  #A6ADA626;
 }
 .form-g-2{
   background:  #A6ADA626;
+}
+@media only screen and (max-width: 500px){
+.first-part-1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+
+}
+.title{
+  font-size: 1.5em;
+}
 }
 
 </style>
@@ -136,7 +151,7 @@ export default {
   },
   data() {
     return {
-      title: "ARTWORK",
+      title: "ARTNETWORK",
       profile: {
           name: 'Welcome Back!!!'
       },

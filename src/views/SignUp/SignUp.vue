@@ -2,8 +2,8 @@
   <div class="body">
     <!-- that that the art  wallpaper -->
     <div class="first-part">
-      <div class="row">
-        <div class="col-3  first-part-1">
+      <div class="row part-way ">
+        <div class="col-lg-3 first-part-1">
           <div class="part-1 p-5">
             <span class="svg">
               <svg
@@ -29,7 +29,7 @@
                 </g>
               </svg>
             </span>
-            <h2 class="text-light">
+            <h2 class="text-light title">
               <router-link
                 to="/"
                 style="text-decoration: none; color: inherit;"
@@ -38,13 +38,13 @@
             </h2>
           </div>
           <div class="sub-head">
-            <div class="item text-white"><strong>ART IS ALL THAT</strong></div>
-            <div class="item" id="matters"><strong>MATTERS</strong></div>
+            <div class="item text-grey"><strong>ART IS ALL THAT</strong></div>
+            <div class="item text-grey" id="matters"><strong>MATTERS</strong></div>
           </div>
         </div>
 
         <!-- form reg part -->
-        <div class="col-9 p-5">
+        <div class="col-9-sm p-5">
           <b-container>
             <div class="form-heading">
               <div>
@@ -180,6 +180,7 @@
 .body {
   margin: 0px;
   padding: 0px;
+  font-family: 'poppins', sans-serif;
 }
 .first-part-1 {
   background: url("~@/assets/img/signup.png");
@@ -225,6 +226,20 @@
   position: absolute;
   margin: auto;
 }
+@media only screen and (max-width: 500px){
+.first-part-1{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+
+}
+.title{
+  font-size: 1.5em;
+}
+}
+
+
+
 </style>
 
 <script>
@@ -249,7 +264,7 @@ export default {
   },
   data() {
     return {
-      title: "ARTWORK",
+      title: "ARTNETWORK",
       select: {
         type: "select your user type",
       },

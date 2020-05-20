@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div class="header">
+  <div class="body">
+    <div class="header ">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-4 svg-part">
+        <div class="row part-1">
+          <div class="svg-part">
             <span class="svg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
                 </g>
               </svg>
             </span>
-            <h2 class="text-light">
+            <h2 class="text-light tittle">
               <router-link
                 to="/"
                 style="text-decoration: none; color: inherit;"
@@ -36,18 +36,17 @@
               >
             </h2>
           </div>
-          <div class="col-4 offset-sm-4 part-2">
-            <div class="notificaton">
-              <span><i class="far fa-bell fa-1x">|</i></span>
+          <div class="part-2 text-white">
+            <div class="notificaton m-2">
+              <span><i class="far fa-bell fa-1x "></i></span>
             </div>
-            <div class="username">
+            <div class="username m-2">
               <span>
                 <p>username</p>
               </span>
             </div>
-            <div class="user">
+            <div class="user m-2">
               <span class="svg">
-                <router-link to="/UploadMedia" style="text-decoration: none; color: inherit;">Log In</router-link>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   :width="width"
@@ -77,13 +76,16 @@
                 </svg>
               </span>
             </div>
-            <div>
-               <router-link to="/Message" style="text-decoration: none; color: inherit;"><i class="fas fa-envelope fa-1x" ></i></router-link>
+            <section class="m-2">
+                 <router-link to="/UploadMedia" style="text-decoration: none; color: inherit;"><i class="fas fa-upload "></i></router-link>
+            </section>
+            <div class="m-2">
+               <router-link to="/Message" style="text-decoration: none; color: inherit;"><i class="fas fa-envelope fa-1x fa-fw" ></i></router-link>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 offset-md-3 text-center text-white mt-5 mb-5 ">
+          <div class="col-md-6 offset-md-3 text-center text-white mt-5 mb-5 rider ">
             Picasso Rider Art
           </div>
         </div>
@@ -91,7 +93,7 @@
           <div class="col-md-6 offset-md-3 mt-5 mb-5">
             <div class="row">
               <div class="col-md-2">
-                <span class="">
+                <span class="flex justify-">
                   <img
                     src="https://images.unsplash.com/photo-1540304801084-0944beb20de7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
                     alt="profile_pic"
@@ -106,8 +108,8 @@
                 </span>
               </div>
               <div class="col-md-2 contact mr-2 mt-3">
-                <span class="">
-                  <p>Contact List</p>
+                <span class="text-center">
+                  <p class="text-center">Contact List</p>
                 </span>
               </div>
               <div class="col-md-2 contact mt-3">
@@ -160,16 +162,16 @@
           <span class="dot"></span>
         </div>
         <div class="gallery-part-2 mb-5 mt-5">
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
+          <div class="row ml-5-md">
+            <div class="col mt-3-md">
+              <div class="card " style="width: 18rem;">
                 <div class="card-body card-1">
                   
                  
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mt-3">
               <div class="card" style="width: 18rem;">
                 <div class="card-body  card-2">
                   
@@ -177,7 +179,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col mt-3">
               <div class="card" style="width: 18rem;">
                 <div class="card-body card-3">
                   
@@ -193,6 +195,9 @@
 </template>
 
 <style scoped>
+.body{
+  font-family: 'poppins', bold;
+}
 .header {
   background: url("~@/assets/img/HomePage-header.png");
   background-repeat: no-repeat;
@@ -203,7 +208,9 @@
 }
 .part-2 {
   display: flex;
-  background: chocolate;
+  background: #fd012a;
+  margin-left: auto;
+  justify-content: space-around;
 }
 .profile {
   position: relative;
@@ -239,6 +246,9 @@
   height: 1px;
   background-color: #9f9f9f;
 }
+.rider{
+   font-size: 4em;
+}
 .dot {
   height: 35px;
   width: 35px;
@@ -258,6 +268,15 @@
 .card-3{
     background: url("~@/assets/img/card-3.png");
     height: 50vh;
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .tittle{
+    font-size:1em;
+    padding: 6px;
+    font: bolder;
+  }
 }
 </style>
 
@@ -287,7 +306,7 @@ export default {
   },
   data() {
     return {
-      title: "ARTWORK",
+      title: "ARTNETWORK",
     };
   },
 };
